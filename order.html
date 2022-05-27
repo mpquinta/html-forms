@@ -1,35 +1,75 @@
-Order a Melongram
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"
+        <title><h1>Order a Melongram!</h1></title>
+    </head>
+    <body>
+        <p>There's no better way to show a loved one you care than with a Melongram.</p>
 
-There's no better way to show a loved one you care than with a Melongram.
+        <p>Each Melongram comes with a custom message printed on high-quality cardstock
+        and your choice of a hand-picked, premium melon.</p>
+        
+        <h2>Melon Options</h2>
+        
+        <p>Choose from one of these melons:</p>
+        
+        <table>
+            <tr>
+                <td>Watermelon</td> 
+                <td>$1,200.00</td>
+            </tr>
+            <tr>
+                <td>Canteloupe</td>
+                <td>$400.00</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td>
+                <td>$1,750.00</td>
+            </tr>
+        </table>
+        
+        <h2>Order Form</h2>
+        
+        <form>
+            Your name<br>
+            <input type="text" name="name"><br><br>
+            
+            Who are we sending this to?<br>
+            <input type="text" name="recipient"><br><br>
+            
+            Choose a melon:
+            <select name="melon">
+                <option value="watermelon">Watermelon</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="honeydew">Honeydew</option>
+            </select>
+            <br><br>
 
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
+            When should we deliver? <br>
 
-Melon Options
+            <input type="radio" name="time" value="am">
+            <label for="morning">Morning</label>
+            
+            <input type="radio" name="time" value="pm">
+            <label for="morning">Evening</label>
 
-Choose from one of these melons:
+            <input type="radio" name="time" value="any">
+            <label for="morning">Any time</label>
+            
+            <br><br>
+                    
+            Enter your message:<br>
+            <textarea name="message"></textarea> <br><br>
 
-Watermelon $1,200.00
-Canteloupe $400.00
-Honeydew $1,750.00
+            Subscribe to our newsletter
+            <input type="checkbox" name="subscribe" value="yes">
+            <label for="subscribe">Yes</label>
 
-Order Form
+            <br><br>
 
-Your name
-
-Who are we sending this to?
-
-Choose a melon
-Watermelon
-Canteloupe
-Honeydew
-
-When should we deliver?
-Morning
-Evening
-Any time
-
-Enter your message:
-
-Subscribe to our newsletter
-Yes
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
